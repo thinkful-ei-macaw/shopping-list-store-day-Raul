@@ -14,8 +14,9 @@ const store = {
 const generateItemElement = function (item) {
   let itemTitle = `<span class='shopping-item shopping-item__checked'>${item.name}</span>`;
   if (!item.checked) {
-    itemTitle = `
+    itemTitle = `<div contenteditable=true> 
      <span class='shopping-item'>${item.name}</span>
+     </div>
     `;
   }
 
