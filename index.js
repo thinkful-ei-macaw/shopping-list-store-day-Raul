@@ -1,3 +1,6 @@
+'use strict';
+/* global cuid, $ */
+
 const store = {
   items: [
     { id: cuid(), name: 'apples', checked: false },
